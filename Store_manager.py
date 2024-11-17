@@ -51,7 +51,7 @@ class Store():
 
 
 
-store_1 = Store("Саквояжик","улица Фруктовая, 5")
+store_1 = Store("Саквояж","улица Фруктовая, 5")
 store_2 = Store("Сумка", "улица Садовая, 54")
 store_3 = Store("Авоська", "улица Огородная, 18")
 stores = {store_1, store_2, store_3}
@@ -61,7 +61,7 @@ user_choice_store = int(input(f"\nВыберите магазин, со спис
                               f"\n 2: {store_2.name}, {store_2.address}"
                                   f"\n 3: {store_3.name}, {store_3.address}\n: "))
 
-while True:
+while user_choice_store != 6:
     if user_choice_store == 1:
         task = int(input("\n Выберите дальнейшее действие:"
                          "\n Добавить товар к списку - 1"
